@@ -4,6 +4,7 @@ RUN apk update
 RUN apk add curl
 RUN apk add run-parts
 
+
 COPY  ./entrypoint.sh /entrypoint.sh
 RUN    \
       cp -rp /etc/crontabs /etc/crontabs.bkp && \
